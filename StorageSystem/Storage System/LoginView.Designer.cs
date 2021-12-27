@@ -48,6 +48,7 @@ namespace Storage_System
             this.btnLogIn.TabIndex = 0;
             this.btnLogIn.Text = "LOG IN";
             this.btnLogIn.UseVisualStyleBackColor = false;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // label1
             // 
@@ -66,6 +67,7 @@ namespace Storage_System
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(190, 27);
             this.txtUserName.TabIndex = 2;
+            this.txtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtUserPass
             // 
@@ -100,6 +102,7 @@ namespace Storage_System
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "CANCEL";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // LoginView
             // 

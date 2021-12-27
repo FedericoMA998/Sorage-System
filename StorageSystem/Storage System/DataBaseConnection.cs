@@ -5,39 +5,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using Microsoft.Data.SqlClient;
+using System.Data;
 
 namespace Storage_System
 {
-    class DataBaseConnection
+    public class DataProcess
     {
-
-        public SqlConnection conn = new SqlConnection("Data Source=FEDE\\SQLEXPRESS; Initial Catalog=STORAGE_SISTEM; Integrated Security=True");
-        
-        public void Open()
+        public static DataSet Excecute(string CMD)
         {
-            try
-            {
-                conn.Open();
-                Console.WriteLine("Connection Opened");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error to open connection", ex);
-            }
-        }
+            SqlConnection conn = new SqlConnection("Data Source=FEDE\\SQLEXPRESS; Initial Catalog=STORAGE_SISTEM; Integrated Security=True");
+            conn.Open();
 
-        public void Close()
-        {
-            try
-            {
-                conn.Close();
-                Console.WriteLine("Connection Closed");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error to close connection" , ex);
-            }
-        }
+            DataSet DS = new DataSet();
+            SqlDataAdapter DA = new SqlDataAdapter();
 
+            DA.Fill(DS);
+            conn.Close();
+
+            return DS;
+        }
     }
 }

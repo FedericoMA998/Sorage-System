@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+kMRR8f1iYJua6FXTWH89irNAlvih6+IUIqrFPNOi9X/QTewvP6iAs6muyzyPBRwDPBEYGGMjrXY6mrSBjOqdw==",
+  "dgSpecHash": "fIHHpEReHC+PbVit5eGRRFAIuxhBvTzkcqptUV4kk4ymoPldgYkpKXiZv/FoEnfn6gKrX5zFgLKed5mfI7QgiA==",
   "success": true,
-  "projectFilePath": "D:\\Desktop\\Personal\\Programacion\\Personal_Proyects\\C#\\SOTRAGE SYSTEM\\StorageSystem\\Storage System\\Storage System.csproj",
+  "projectFilePath": "D:\\Desktop\\Personal\\Programacion\\C#\\Sorage-System\\StorageSystem\\Storage System\\Storage System.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\miran\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\miran\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",
